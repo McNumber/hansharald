@@ -4,9 +4,10 @@
  */
 
 require.paths.unshift(__dirname + "/lib/node")
-var express = require('express');
-
-var app = module.exports = express.createServer();
+var express = require('express')
+  , app     = module.exports = express.createServer()
+  , Tweeter = require(__dirname + "/lib/hansharald/Tweeter").Tweeter
+  , tweeter = new Tweeter(require(__dirname + "/lib/hansharald/TweeterConfig"))
 
 // Configuration
 app.configure(function(){
@@ -17,10 +18,7 @@ app.configure(function(){
   app.use(app.router);
   app.use(express.staticProvider(__dirname + '/public'));
   
-  var Tweeter = require(__dirname + "/lib/hansharald/Tweeter").Tweeter
-    , tweeter = new Tweeter(require(__dirname + "/lib/hansharald/TweeterConfig"))
-
-  tweeter.run(1000 * 60 * 1)
+  // tweeter.run(1000 * 60 * 1)
 });
 
 app.configure('development', function(){
@@ -33,11 +31,14 @@ app.configure('production', function(){
 
 // Routes
 app.get('/', function(req, res){
-  res.render('index', {
-    locals: {
-      title: 'Express'
-    }
-  });
+  tweeter.getLastTweets(function(tweets) {
+    res.render('index', {
+      locals: { 
+        tweets: tweets,
+        title: "MadEvilOverlord is speaking!"
+      }
+    })
+  }, 3)
 });
 
 // Only listen on $ node app.js
