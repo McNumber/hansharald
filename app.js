@@ -9,7 +9,6 @@ var express = require('express');
 var app = module.exports = express.createServer();
 
 // Configuration
-
 app.configure(function(){
   app.set('views', __dirname + '/views');
   app.set('view engine', 'jade');
@@ -17,6 +16,11 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.staticProvider(__dirname + '/public'));
+  
+  var Tweeter = require(__dirname + "/lib/hansharald/Tweeter").Tweeter
+    , tweeter = new Tweeter(require(__dirname + "/lib/hansharald/TweeterConfig"))
+
+  tweeter.run(1000 * 60 * 1)
 });
 
 app.configure('development', function(){
@@ -28,7 +32,6 @@ app.configure('production', function(){
 });
 
 // Routes
-
 app.get('/', function(req, res){
   res.render('index', {
     locals: {
@@ -38,7 +41,6 @@ app.get('/', function(req, res){
 });
 
 // Only listen on $ node app.js
-
 if (!module.parent) {
   app.listen(3000);
   console.log("Express server listening on port %d", app.address().port)
