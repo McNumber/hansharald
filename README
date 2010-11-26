@@ -1,1 +1,6 @@
-foobar
+To run the app:
+
+- curl http://npmjs.org/install.sh | sh #if that fails, look at https://github.com/isaacs/npm
+- ndistro
+- npm install express
+- bin/node app.js

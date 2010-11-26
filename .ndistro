@@ -1,0 +1,4 @@
+node 0.2.3
+module ciaranj node-oauth
+module visionmedia jade
+module senchalabs connect
