@@ -1,6 +1,7 @@
 To run the app:
 
 - curl http://npmjs.org/install.sh | sh #if that fails, look at https://github.com/isaacs/npm
+- cd /usr/local/bin && curl https://github.com/visionmedia/ndistro/raw/master/install | sh
 - ndistro
 - npm install express
 - bin/node app.js

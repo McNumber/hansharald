@@ -1,4 +1,2 @@
 bin
-modules
-lib/node
 lib/hansharald/TweeterConfig.js
