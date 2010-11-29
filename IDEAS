@@ -1,0 +1,39 @@
+Ideen fürs MadEvilOverlord-Skript
+
+höchstens 3 Posts täglich zu unterschiedlichen Zeiten (auch nachts, das Böse schläft nie!)
+
+Variierendes manisches Lachen:
+- Länge (muhaha, muhahahahahaha)
+- Anzahl der Ausrufezeichen dahinter (0..10)
+- Groß-, Kleinschreibung (Muhahaha, MuhHAHAaha)
+- Anfang (Muhaha, Mwahaha, Hohahaha...)
+- Silben (ha, ho, hu, hi)
+
+
+Für die folgenden Sachen wäre eine Konfigurationsseite cool, wo man neue Wörter hinzufügen kann.
+
+Variierende Ausprüche:
+
+- DIE, <Name von Spezialagent>, DIE!
+- ...
+
+Geheime Superwaffe des Tages posten:
+- mehrere Teile, z.B. "Evil Laser Banana of Death"
+- 1. Teil: beschreibendes Adjektiv (Evil, Dark, Deadly...)
+- 2. und 3. Teil: Substantiv, alles was ne Waffe sein könnte (Laser, Shotgun, Catapult...)
+- Teil 2 und 3 kommen aus derselben Liste und werden hintereinandergesetzt
+- 4. Teil: "of <irgendwas" (of Death, of Doom, of Eternal Despair...)
+
+
+Neueste Kreation der geheimen Genlabors:
+- "clawed Wolfcat (with horns)"
+- 3 Teile:
+- 1. Adjektiv (clawed, horned,...)
+- 2. zusammengesetztes Substantiv: mindestens zwei Tiere, aus derselben Liste
+- 3. Zusatz (with horn, howling, horny, 3-legged)
+
+Zutaten für Welteroberungspläne:
+- 1. Vorsatz (Need:, Just ordered, Want, for totally peaceful purposes, where can i get...)
+- 2. Menge 0,00001 bis 10000000 (möglichst genau, evtl. unterscheiden, ob Stückzahl (ganze Zahl) oder Gewicht (float))
+- 3. evtl. Dimension (kg, t, g usw.)
+- 4. irgendeine Sache, möglichst abstrus (Trousers, Beewax, Shaving Foam)
